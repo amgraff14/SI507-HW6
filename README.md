@@ -77,12 +77,14 @@ Some JavaScript code
 You must put two // before a comment.
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
+
 To get a JavaScript program to "run" you need a script line to identify that you're writing in JavaScript -- all of the elements that are dynamic go after that line.
 ```js
 <script type="text/javascript">
 ```
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
+
 	1. console.log() shows up in the developer console.
 ```js
 console.log();
@@ -95,6 +97,7 @@ alert();
 I would probably opt to use the console.log() for looking at specific outputs of certain functions. Alert could be helpful to print something if someone enters the wrong input, or if something runs correctly or incorrectly -- it's easier to see than the console.
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
+
 ```js
 alert("hello");
 ```
@@ -104,26 +107,31 @@ alert("hello");
 You can put your name by editing the html under the first header.
 
 * **What does the word `document` represent in this code? Explain briefly.**
-document is referring to the webpage -- it allows you to select elements in the html to append the javascript to have it show up on the webpage.
+
+'document' is referring to the webpage as a whole -- it allows you to select elements in the html to append the javascript to have it show up on the webpage.
 
 * **What is happening in line 12 (
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
-This line is returning the number of list items in the page by counting the length of anything that has a list tag associated with it.
+
+This line is returning the number of list elements in the page by counting the length of anything that has a list tag associated with it.
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
+
 By commenting out the background color line, the color would be white.
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
-Lines 36-42 identify the style of a p-element (a paragraph), and this one happens to be specifically gray.
+
+Lines 36-42 identify the style of a p-element (a paragraph), and this one happens to be specifically gray. This can be edited by changing the background-color.
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
+
 I looked at the code that is embedded for University of Michigan -- it is a function that will do the same thing as this question is asking, so I have copied/pasted/modified to have it fit the purposes of this question.
 While I probably could have done an if/else statement and kept it in the same div, I just made another div, and another function referring to the new div.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
-The <button> (the second code below) code creates the button, and identifies what it wants the button to do and what letters should be on the button. The handleClick function is called in the button code to create an alert textbox that says hello when someone clicks on the wow button.
 
+The <button> (the second code below) code creates the button, and identifies what it wants the button to do and what letters should be on the button. The handleClick function is called in the button code to create an alert textbox that says hello when someone clicks on the wow button.
 
 ```js
 function handleClick(){
@@ -145,18 +153,23 @@ function handleClick(){
 * **Check out the file `jquerylib_submit_example.html`. This is an example of code that uses a package called `jQuery` (and this will need you to have an internet connection to run it properly, although the other file does not). Check out resources above for more on jQuery!**
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
+
 Lines 8-13 identify the attributes of what is considered an error and what is considered to be good. Within this, the style chosen for an error is red and for a good response it is blue.
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+
 The line is helping the program identify the text that is input into the text input box. Using regex helps the program identify specific characters, and leave out unwanted characters. This, specifically, is identifying any non alphabetical characters, either upper or lowercase.
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
+
 The use of curly-brackets is different -- they are used for both the if and else statement (which can be frustrating if you forget!). Also, after the if or else statement, parentheses are necessary for whatever statement you want to put in there.
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+
 This refers to the speed at which the text should fade from view.
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
+
 This is first selecting the entire document ($(document)), and, according to the documentation, gets the webpage ready to be manipulated in javascript (.ready()).
 The function in .ready() is then creating the input text box. This is done by first selecting the form element ($("form")) and (according to documentation) the .submit(function(event) is intended to initialize the submission of text in this form element.
 
